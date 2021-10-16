@@ -17,6 +17,8 @@
                 uses: actions/setup-java@v1
                 with:
                     java-version: 15
+              - name: Prepare Gradle
+                run: chmod +x ./gradlew
               - name: Gradle Build
                 uses: gradle/gradle-build-action@v2
                 with:
